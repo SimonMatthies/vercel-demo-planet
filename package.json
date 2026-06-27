@@ -8,8 +8,8 @@
     "build": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "db:seed": "tsx scripts/seed.ts",
-    "db:setup": "drizzle-kit push && tsx scripts/seed.ts"
+    "db:seed": "tsx src/db/seed.ts",
+    "db:setup": "drizzle-kit push && tsx src/db/seed.ts"
   },
   "dependencies": {
     "@hono/zod-openapi": "^0.19.6",
@@ -24,6 +24,7 @@
     "@types/pg": "^8.15.4",
     "dotenv": "^17.0.1",
     "drizzle-kit": "^0.31.4",
+    "drizzle-seed": "^0.3.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
