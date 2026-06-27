@@ -1,9 +1,9 @@
 import type {} from "hono";
 import { createRoute, OpenAPIHono, z } from "@hono/zod-openapi";
 import { sql } from "drizzle-orm";
-import { db, pool } from "./db/client";
-import { demoItems } from "./db/schema";
-import { getRuntimeMetrics, measure, recordRequest } from "./lib/timing";
+import { db, pool } from "./db/client.js";
+import { demoItems } from "./db/schema.js";
+import { getRuntimeMetrics, measure, recordRequest } from "./lib/timing.js";
 
 const TimingSchema = z
   .object({

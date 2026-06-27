@@ -2,7 +2,7 @@ import "dotenv/config";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { reset, seed } from "drizzle-seed";
 import { Pool } from "pg";
-import * as schema from "./schema";
+import * as schema from "./schema.js";
 
 const ROW_COUNT = 10_000;
 
